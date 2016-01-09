@@ -24,7 +24,7 @@ If you don't, you might encounter a "Nothing to repeat" error.
  
 ```js
 var s = 'Buckys C++ Programming Tutorials - 23 - Making a Stock Market Simulator!.mp4';
-var substrRegex = new RegExp(myquote(s), 'i');
+var substrRegex = new RegExp(jGoodies.regexQuote(s), 'i');
 ``` 
 
 
