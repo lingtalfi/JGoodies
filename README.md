@@ -28,6 +28,16 @@ var substrRegex = new RegExp(jGoodies.regexQuote(s), 'i');
 ``` 
 
 
+### selectorEscape 
+
+Properly escapes a [jquery selector](https://api.jquery.com/category/selectors/).
+ 
+```js
+var x = "dyNami" + 'c';
+var jItem = $('[data-id="'+ jGoodies.selectorEscape(x) +'"]');
+``` 
+
+
 
 
 
@@ -39,6 +49,10 @@ var substrRegex = new RegExp(jGoodies.regexQuote(s), 'i');
 
 History Log
 ------------------
+    
+- 1.1.0 -- 2016-02-02
+
+    - add selectorEscape method
     
 - 1.0.0 -- 2016-01-09
 

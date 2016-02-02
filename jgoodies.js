@@ -5,6 +5,9 @@ if ('undefined' === typeof window.jGoodies) {
          */
         regexQuote: function (str) {
             return str.replace(/([.?*+^$[\]\\(){}|-])/g, "\\$1");
+        },
+        selectorEscape: function (sExpression) {
+            return sExpression.replace(/[!"#$%&'()*+,.\/:;<=>?@\[\\\]^`{|}~]/g, '\\$&');
         }
     };
 }
